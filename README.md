@@ -86,3 +86,68 @@ src/
 ├── App.tsx
 └── main.tsx
 
+---
+
+## ▶️ How to Run the Project Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/akshay2077/The_Wedding_Company_Assignment.git
+cd The_Wedding_Company_Assignment
+
+2. Install Dependencies
+npm install
+
+3. Start the Development Server
+npm run dev
+
+4. Build for Production
+npm run build
+
+🌐 Deployment Instructions (Vercel)
+
+Go to https://vercel.com
+
+Click New Project
+
+Import your GitHub repository
+
+Select Vite + React
+
+Set build command:
+
+npm run build
+
+
+Output folder:
+
+dist
+
+
+Click Deploy
+Your app will be live instantly 🚀
+
+📘 Assumptions Made
+
+Quiz questions are static and stored locally
+
+Score resets only when "Start Again" is clicked
+
+No backend required for this assignment
+
+⏱ Time Spent on This Assignment
+
+Approx. 8–10 hours, including:
+
+UI layout & styling
+
+Tailwind clean design
+
+Quiz logic & state management
+
+Score animation development
+
+Paw animation logic
+
+Deployment setup
+
