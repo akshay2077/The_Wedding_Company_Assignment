@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { quizData } from "../data/quizData";
 import TitleSection from "../shared/TitleSection";
 import ProgressBar from "../shared/ProgressBar";
