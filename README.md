@@ -1,73 +1,132 @@
-# React + TypeScript + Vite
+🎓 Interactive Quiz Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, responsive, and animated quiz application built with React + TypeScript + TailwindCSS.
+Designed with smooth UI, animations, progress tracking, and an engaging final score screen.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live URL: (Add your Vercel/Netlify link here)
+🔗 GitHub Repository: https://github.com/akshay2077/The_Wedding_Company_Assignment
 
-## React Compiler
+📸 Screenshots
+⭐ Quiz Start Screen
+![WhatsApp Image 2025-12-12 at 16 38 07_613bd22f](https://github.com/user-attachments/assets/9eaa2a62-1a4b-4aa7-bac5-08561ca40f6e)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+⭐ Question Screen
+![WhatsApp Image 2025-12-12 at 16 32 23_7614742d](https://github.com/user-attachments/assets/9a100a0f-9111-4b70-81cb-62bfd1fd3ceb)
+![WhatsApp Image 2025-12-12 at 16 32 11_7b138326](https://github.com/user-attachments/assets/63d39549-89d9-4a84-8718-26038ba33292)
+![WhatsApp Image 2025-12-12 at 16 32 35_add774f3](https://github.com/user-attachments/assets/c25d0094-05eb-4841-a00a-08c16cbe3a1c)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+⭐ Final Score Screen
+![WhatsApp Image 2025-12-12 at 16 36 45_d15dcb69](https://github.com/user-attachments/assets/33da678d-1a32-4332-bbff-33c9dd9721a3)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🧠 Features
+✔ Clean & Modern UI
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Soft gradients, glowing shadows, rounded cards
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Smooth animations and delightful micro-interactions
+
+✔ Progress Bar
+
+Dynamic progress indicator for every question
+
+✔ Interactive Options
+
+Options highlight on selection
+
+Smooth hover + click animations
+
+✔ Paw Animation on First Question
+
+Cute paw GIF & “Best of Luck!” bubble appears only on the first question
+
+✔ Auto-Animated Score Counter
+
+Score animates from 0 → Final percentage
+
+✔ Fully Responsive
+
+Works seamlessly on desktop, tablet, and mobile
+
+🛠 Tech Stack
+Technology	Purpose
+React + TypeScript	Core application
+TailwindCSS	Styling & layout
+Vite	Fast frontend build tool
+GitHub Pages / Vercel	Deployment
+📂 Folder Structure
+src/
+ ├── assets/
+ │    └── paw.gif
+ ├── components/
+ │    ├── OptionButton.tsx
+ │    ├── QuestionCard.tsx
+ │    └── ScoreScreen.tsx
+ ├── pages/
+ │    └── Quiz.tsx
+ ├── shared/
+ │    ├── TitleSection.tsx
+ │    └── ProgressBar.tsx
+ ├── data/
+ │    └── quizData.ts
+ ├── index.css
+ ├── App.tsx
+ └── main.tsx
+
+▶️ How to Run the Project Locally
+1. Clone the Repository
+git clone https://github.com/akshay2077/The_Wedding_Company_Assignment.git
+cd The_Wedding_Company_Assignment
+
+2. Install Dependencies
+npm install
+
+3. Start the Development Server
+npm run dev
+
+4. Build for Production
+npm run build
+
+🌐 Deployment Instructions (Vercel)
+
+Go to https://vercel.com
+
+Click New Project
+
+Import your GitHub repository
+
+Choose Vite + React
+
+Set Build Command:
+
+npm run build
+
+
+📘 Assumptions Made
+
+Quiz questions are static and stored locally
+
+User score resets only when "Start Again" is clicked
+
+No backend needed for this assignment
+
+⏱ Time Spent on This Assignment
+
+Approx: 8 – 10 hours, including:
+
+UI layout and animations
+
+State management logic
+
+TailwindCSS styling
+
+Score animation
+
+Paw animation logic
+
+Deployment setup
