@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  @apply antialiased;
+  background: linear-gradient(135deg, #bfe9ff 0%, #dbeeff 40%, #d6c9ff 100%);
+  margin: 0;
+  min-height: 100vh;
+} */
+
+body {
+ background: linear-gradient(
+  135deg,
+  #C4D8F3 0%,     /* top-left */
+  #7BB8E8 40%,    /* middle soft aqua */
+  #CBE5FF 100%    /* bottom-right sky blue */
+);
+
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+.card-shadow {
+  box-shadow:
+    0 20px 40px rgba(17,82,113,0.12),
+    inset 0 6px 8px rgba(255,255,255,0.6);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+.font-['Comic_Neue'] {
+  font-family: 'Comic Neue', cursive;
+}
+

@@ -1,0 +1,12 @@
+import Quiz from "./pages/Quiz";
+
+function App() {
+  return (
+    <div className="min-h-screen flex items-center justify-center p-10">
+
+      <Quiz />
+    </div>
+  );
+}
+
+export default App;
