@@ -7,7 +7,7 @@ Designed with smooth UI, soft gradients, animations, progress tracking, and an e
 
 ## 🚀 Live Demo
 
-🔗 **Live URL:** *(Add your Vercel/Netlify link here)*  
+🔗 **Live URL:** https://akshay-wedding-company-assignment.vercel.app/  
 🔗 **GitHub Repository:** https://github.com/akshay2077/The_Wedding_Company_Assignment
 
 ---
@@ -125,7 +125,7 @@ dist
 
 
 Click Deploy
-Your app will be live instantly 🚀
+Your app will be live instantly 
 
 📘 Assumptions Made
 
